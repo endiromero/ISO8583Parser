@@ -1,0 +1,412 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<niso8583>
+
+	<header type="0100">ISO015000050</header>
+	<header type="0110">ISO015000055</header>
+
+	<header type="0200">ISO015000050</header>
+	<header type="0210">ISO015000055</header>
+	<header type="0221">ISO015000055</header>
+
+	<header type="0220">ISO015000050</header>
+	<header type="0230">ISO015000055</header>
+
+	<header type="0420">ISO015000050</header>
+	<header type="0421">ISO015000050</header>
+	<header type="0430">ISO015000055</header>
+
+	<header type="0800">ISO015000015</header>
+	<header type="0810">ISO015000015</header>
+
+	<header type="0820">ISO015000015</header>
+	<header type="0830">ISO015000015</header>
+
+
+	<!-- The client example uses this to create requests -->
+	<template type="0200">
+		<field num="2" type="LLVAR" >4444333322221111</field>
+	</template>
+
+	<!-- The server example uses this to create the responses
+	we only need a few fields because the rest are copied from the request -->
+	<template type="0210">
+		<field num="60" type="LLLVAR">template</field>
+	</template>
+
+	<!-- The server example uses this to read the requests -->
+	<parse type="0200">
+		<field num="2" type="LLVAR" />
+		<field num="3" type="NUMERIC" length="6" />
+		<field num="4" type="AMOUNT" />
+		<field num="7" type="DATE10" />
+		<field num="11" type="NUMERIC" length="6" />
+		<field num="12" type="TIME" />
+		<field num="13" type="DATE4" />
+		<field num="14" type="DATE_EXP" />
+		<field num="15" type="DATE4" />
+		<field num="18" type="NUMERIC" length="4" />
+		<field num="22" type="NUMERIC" length="4" />
+		<field num="23" type="NUMERIC" length="4" />
+		<field num="25" type="NUMERIC" length="2" />
+		<field num="32" type="LLVAR" />
+		<field num="33" type="LLVAR" />
+		<field num="35" type="LLVAR" />
+		<field num="37" type="ALPHA" length="24" />
+		<field num="38" type="ALPHA" length="12" />
+		<field num="41" type="ALPHA" length="16" />
+		<field num="42" type="ALPHA" length="30" />
+		<field num="43" type="ALPHA" length="80" />
+		<field num="47" type="LLLVARnp" />
+		<field num="48" type="LLLVARnp" />
+		<field num="53" type="NUMERIC" length="16" />
+		<field num="55" type="LLLVARnp" />
+		<field num="57" type="AMOUNT" />
+	</parse>
+
+	<!-- The client example uses this to read the responses -->
+	<parse type="0210">
+		<field num="2" type="LLVAR" />
+		<field num="3" type="NUMERIC" length="6" />
+		<field num="4" type="AMOUNT" />
+		<field num="7" type="DATE10" />
+		<field num="11" type="NUMERIC" length="6" />
+		<field num="15" type="DATE4" />
+		<field num="32" type="LLVAR" />
+		<field num="33" type="LLVAR" />
+		<field num="37" type="ALPHA" length="24" />
+		<field num="38" type="ALPHA" length="12" />
+		<field num="39" type="ALPHA" length="4" />
+		<field num="41" type="ALPHA" length="16" />
+		<field num="42" type="ALPHA" length="30" />
+		<field num="47" type="LLLVARnp" />
+		<field num="53" type="NUMERIC" length="16" />
+		<field num="55" type="LLLVARnp" />
+		<field num="57" type="AMOUNT" />
+		<field num="58" type="AMOUNT" />
+		<field num="59" type="AMOUNT" />
+	</parse>
+
+
+
+
+	<!-- The client example uses this to create requests -->
+	<template type="0100">
+		<field num="2" type="LLVAR" >4444333322221111</field>
+	</template>
+
+	<!-- The server example uses this to create the responses
+	we only need a few fields because the rest are copied from the request -->
+	<template type="0110">
+		<field num="2" type="LLVAR" >4444333322221111</field>
+	</template>
+
+	<!-- The server example uses this to read the requests -->
+	<parse type="0100">
+		<field num="2" type="LLVAR" />
+		<field num="3" type="NUMERIC" length="6" />
+		<field num="4" type="AMOUNT" />
+		<field num="7" type="DATE10" />
+		<field num="11" type="NUMERIC" length="6" />
+		<field num="12" type="TIME" />
+		<field num="13" type="DATE4" />
+		<field num="14" type="DATE_EXP" />
+		<field num="15" type="DATE4" />
+		<field num="18" type="NUMERIC" length="4" />
+		<field num="22" type="NUMERIC" length="4" />
+		<field num="23" type="NUMERIC" length="4" />
+		<field num="25" type="NUMERIC" length="2" />
+		<field num="32" type="LLVAR" />
+		<field num="33" type="LLVAR" />
+		<field num="35" type="LLVAR" />
+		<field num="37" type="ALPHA" length="24" />
+		<field num="41" type="ALPHA" length="16" />
+		<field num="42" type="ALPHA" length="30" />
+		<field num="43" type="ALPHA" length="80" />
+		<field num="47" type="LLLVARnp" />
+		<field num="48" type="LLLVARnp" />
+		<field num="53" type="NUMERIC" length="16" />
+		<field num="55" type="LLLVARnp" />
+		<field num="57" type="AMOUNT" />
+	</parse>
+
+	<!-- The client example uses this to read the responses -->
+	<parse type="0110">
+		<field num="2" type="LLVAR" />
+		<field num="3" type="NUMERIC" length="6" />
+		<field num="4" type="AMOUNT" />
+		<field num="7" type="DATE10" />
+		<field num="11" type="NUMERIC" length="6" />
+		<field num="15" type="DATE4" />
+		<field num="32" type="LLVAR" />
+		<field num="33" type="LLVAR" />
+		<field num="37" type="NUMERIC" length="24" />
+		<field num="38" type="ALPHA" length="12" />
+		<field num="39" type="ALPHA" length="4" />
+		<field num="41" type="ALPHA" length="16" />
+		<field num="42" type="ALPHA" length="30" />
+		<field num="47" type="LLLVARnp" />
+		<field num="53" type="NUMERIC" length="16" />
+		<field num="55" type="LLLVARnp" />
+		<field num="57" type="AMOUNT" />
+		<field num="58" type="AMOUNT" />
+		<field num="59" type="AMOUNT" />
+	</parse>
+
+
+
+	<!-- The client example uses this to create requests -->
+	<template type="0220">
+		<field num="2" type="LLVAR" >4444333322221111</field>
+	</template>
+	<template type="0221">
+		<field num="2" type="LLVAR" >4444333322221111</field>
+	</template>
+
+	<!-- The server example uses this to create the responses
+	we only need a few fields because the rest are copied from the request -->
+	<template type="0230">
+		<field num="60" type="LLLVAR">template</field>
+	</template>
+
+	<!-- The server example uses this to read the requests -->
+	<parse type="0220">
+		<field num="2" type="LLVAR" />
+		<field num="3" type="NUMERIC" length="6" />
+		<field num="4" type="AMOUNT" />
+		<field num="7" type="DATE10" />
+		<field num="11" type="NUMERIC" length="6" />
+		<field num="12" type="TIME" />
+		<field num="13" type="DATE4" />
+		<field num="14" type="DATE_EXP" />
+		<field num="15" type="DATE4" />
+		<field num="18" type="NUMERIC" length="4" />
+		<field num="22" type="NUMERIC" length="4" />
+		<field num="23" type="NUMERIC" length="4" />
+		<field num="25" type="NUMERIC" length="2" />
+		<field num="32" type="LLVAR" />
+		<field num="33" type="LLVAR" />
+		<field num="35" type="LLVAR" />
+		<field num="37" type="NUMERIC" length="24" />
+		<field num="38" type="ALPHA" length="12" />
+		<field num="41" type="ALPHA" length="16" />
+		<field num="42" type="ALPHA" length="30" />
+		<field num="43" type="ALPHA" length="80" />
+		<field num="47" type="LLLVARnp" />
+		<field num="48" type="LLLVARnp" />
+		<field num="53" type="NUMERIC" length="16" />
+		<field num="55" type="LLLVARnp" />
+		<field num="57" type="AMOUNT" />
+	</parse>
+
+	<!-- The server example uses this to read the requests -->
+	<parse type="0221">
+		<field num="2" type="LLVAR" />
+		<field num="3" type="NUMERIC" length="6" />
+		<field num="4" type="AMOUNT" />
+		<field num="7" type="DATE10" />
+		<field num="11" type="NUMERIC" length="6" />
+		<field num="12" type="TIME" />
+		<field num="13" type="DATE4" />
+		<field num="14" type="DATE_EXP" />
+		<field num="15" type="DATE4" />
+		<field num="18" type="NUMERIC" length="4" />
+		<field num="22" type="NUMERIC" length="4" />
+		<field num="23" type="NUMERIC" length="4" />
+		<field num="25" type="NUMERIC" length="2" />
+		<field num="32" type="LLVAR" />
+		<field num="33" type="LLVAR" />
+		<field num="35" type="LLVAR" />
+		<field num="37" type="NUMERIC" length="24" />
+		<field num="38" type="ALPHA" length="12" />
+		<field num="41" type="ALPHA" length="16" />
+		<field num="42" type="ALPHA" length="30" />
+		<field num="43" type="ALPHA" length="80" />
+		<field num="47" type="LLLVARnp" />
+		<field num="48" type="LLLVARnp" />
+		<field num="53" type="NUMERIC" length="16" />
+		<field num="55" type="LLLVARnp" />
+		<field num="57" type="AMOUNT" />
+	</parse>
+
+	<!-- The client example uses this to read the responses -->
+	<parse type="0230">
+		<field num="2" type="LLVAR" />
+		<field num="3" type="NUMERIC" length="6" />
+		<field num="4" type="AMOUNT" />
+		<field num="7" type="DATE10" />
+		<field num="11" type="NUMERIC" length="6" />
+		<field num="15" type="DATE4" />
+		<field num="32" type="LLVAR" />
+		<field num="33" type="LLVAR" />
+		<field num="37" type="NUMERIC" length="24" />
+		<field num="39" type="ALPHA" length="4" />
+		<field num="41" type="ALPHA" length="16" />
+		<field num="42" type="ALPHA" length="30" />
+		<field num="53" type="NUMERIC" length="16" />
+		<field num="57" type="AMOUNT" />
+	</parse>
+
+	<!-- The client example uses this to create requests -->
+	<template type="0420">
+		<field num="2" type="LLVAR" >4444333322221111</field>
+	</template>
+	<template type="0421">
+		<field num="2" type="LLVAR" >4444333322221111</field>
+	</template>
+	<!-- The server example uses this to create the responses
+	we only need a few fields because the rest are copied from the request -->
+	<template type="0430">
+		<field num="60" type="LLLVAR">template</field>
+	</template>
+
+
+	<!-- The server example uses this to read the requests -->
+	<parse type="0420">
+		<field num="2" type="LLVAR" />
+		<field num="3" type="NUMERIC" length="6" />
+		<field num="4" type="AMOUNT" />
+		<field num="7" type="DATE10" />
+		<field num="11" type="NUMERIC" length="6" />
+		<field num="12" type="TIME" />
+		<field num="13" type="DATE4" />
+		<field num="14" type="DATE_EXP" />
+		<field num="15" type="DATE4" />
+		<field num="22" type="NUMERIC" length="4" />
+		<field num="23" type="NUMERIC" length="4" />
+		<field num="25" type="NUMERIC" length="2" />
+		<field num="32" type="LLVAR" />
+		<field num="33" type="LLVAR" />
+		<field num="35" type="LLVAR" />
+		<field num="37" type="NUMERIC" length="24" />
+		<field num="41" type="ALPHA" length="16" />
+		<field num="42" type="ALPHA" length="30" />
+		<field num="43" type="ALPHA" length="80" />
+		<field num="47" type="LLLVARnp" />
+		<field num="48" type="LLLVARnp" />
+		<field num="53" type="NUMERIC" length="16" />
+		<field num="55" type="LLLVARnp" />
+		<field num="57" type="AMOUNT" />
+		<field num="90" type="NUMERIC" length="42" />
+	</parse>
+
+	<!-- The server example uses this to read the requests -->
+	<parse type="0421">
+		<field num="2" type="LLVAR" />
+		<field num="3" type="NUMERIC" length="6" />
+		<field num="4" type="AMOUNT" />
+		<field num="7" type="DATE10" />
+		<field num="11" type="NUMERIC" length="6" />
+		<field num="12" type="TIME" />
+		<field num="13" type="DATE4" />
+		<field num="14" type="DATE_EXP" />
+		<field num="15" type="DATE4" />
+		<field num="22" type="NUMERIC" length="4" />
+		<field num="23" type="NUMERIC" length="4" />
+		<field num="25" type="NUMERIC" length="2" />
+		<field num="32" type="LLVAR" />
+		<field num="33" type="LLVAR" />
+		<field num="35" type="LLVAR" />
+		<field num="37" type="NUMERIC" length="24" />
+		<field num="41" type="ALPHA" length="16" />
+		<field num="42" type="ALPHA" length="30" />
+		<field num="43" type="ALPHA" length="80" />
+		<field num="47" type="LLLVARnp" />
+		<field num="48" type="LLLVARnp" />
+		<field num="53" type="NUMERIC" length="16" />
+		<field num="55" type="LLLVARnp" />
+		<field num="57" type="AMOUNT" />
+		<field num="90" type="NUMERIC" length="42" />
+	</parse>
+
+	<!-- The client example uses this to read the responses -->
+	<parse type="0430">
+		<field num="2" type="LLVAR" />
+		<field num="3" type="NUMERIC" length="6" />
+		<field num="4" type="AMOUNT" />
+		<field num="7" type="DATE10" />
+		<field num="11" type="NUMERIC" length="6" />
+		<field num="15" type="DATE4" />
+		<field num="32" type="LLVAR" />
+		<field num="33" type="LLVAR" />
+		<field num="37" type="NUMERIC" length="24" />
+		<field num="39" type="ALPHA" length="4" />
+		<field num="41" type="ALPHA" length="16" />
+		<field num="42" type="ALPHA" length="30" />
+		<field num="53" type="NUMERIC" length="16" />
+		<field num="57" type="AMOUNT" />
+	</parse>
+
+
+	<!-- The client example uses this to create requests -->
+	<template type="0800">
+		<field num="70" type="NUMERIC" length="3" >001</field>
+	</template>
+
+	<!-- The server example uses this to create the responses
+	we only need a few fields because the rest are copied from the request -->
+	<template type="0810">
+		<field num="39" type="ALPHA" length="4" >00</field>
+	</template>
+
+
+
+	<!-- The server example uses this to read the requests -->
+	<parse type="0800">
+		<field num="7" type="DATE10" />
+		<field num="11" type="NUMERIC" length="6" />
+		<field num="33" type="LLVAR" />
+		<field num="48" type="LLLVARnp" />
+		<field num="53" type="NUMERIC" length="16" />
+		<field num="70" type="NUMERIC" length="4" />
+		<field num="96" type="NUMERIC" length="16" />
+		<field num="100" type="LLVAR" />
+		<field num="125" type="LLLVAR" />
+	</parse>
+
+	<!-- The client example uses this to read the responses -->
+	<parse type="0810">
+		<field num="7" type="DATE10" />
+		<field num="11" type="NUMERIC" length="6" />
+		<field num="33" type="LLVAR" />
+		<field num="39" type="ALPHA" length="4" />
+		<field num="48" type="LLLVARnp" />
+		<field num="53" type="NUMERIC" length="16"/>
+		<field num="70" type="NUMERIC" length="4" />
+		<field num="100" type="LLVAR" />
+	</parse>
+
+	<!-- The client example uses this to create requests -->
+	<template type="0820">
+		<field num="70" type="NUMERIC" length="3" >001</field>
+	</template>
+
+	<!-- The server example uses this to create the responses
+	we only need a few fields because the rest are copied from the request -->
+	<template type="0830">
+		<field num="39" type="ALPHA" length="4" >00</field>
+	</template>
+
+	<!-- The server example uses this to read the requests -->
+	<parse type="0820">
+		<field num="7" type="DATE10" />
+		<field num="11" type="NUMERIC" length="6" />
+		<field num="33" type="LLVAR" />
+		<field num="39" type="ALPHA" length="4" />
+		<field num="48" type="LLLVARnp" />
+		<field num="53" type="NUMERIC" length="16"/>
+		<field num="70" type="NUMERIC" length="4" />
+		<field num="100" type="LLVAR" />
+	</parse>
+
+	<!-- The client example uses this to read the responses -->
+	<parse type="0830">
+		<field num="7" type="DATE10" />
+		<field num="11" type="NUMERIC" length="6" />
+		<field num="33" type="LLVAR" />
+		<field num="39" type="ALPHA" length="4" />
+		<field num="48" type="LLLVARnp" />
+		<field num="53" type="NUMERIC" length="16"/>
+		<field num="70" type="NUMERIC" length="4" />
+		<field num="100" type="LLVAR" />
+	</parse>
+</niso8583>
